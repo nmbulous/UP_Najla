@@ -1,0 +1,15 @@
+{
+  "name": "grid_express",
+  "version": "1.0.0",
+  "description": "UP with Three.js",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "author": "Najla Bulous",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "three": "^0.116.1"
+  }
+}
