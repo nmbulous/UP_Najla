@@ -1,5 +1,5 @@
-var buildingsJSONPath = "/100x100/raleigh_buildings_with_tsne_100x100.json"
-var imagesPath = "/100x100/buildings_thumbs_256.json"
+var buildingsJSONPath = "data/100x100/raleigh_buildings_with_tsne_100x100.json"
+var imagesPath = "data/100x100/buildings_thumbs_256.json"
 var buildingsArray; 
 
 function loadBase(jsonPath) {

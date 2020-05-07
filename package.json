@@ -2,9 +2,9 @@
   "name": "grid_express",
   "version": "1.0.0",
   "description": "UP with Three.js",
-  "main": "server/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server/app.js"
+    "start": "node app.js"
   },
   "author": "Najla Bulous",
   "license": "ISC",
