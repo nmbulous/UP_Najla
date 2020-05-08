@@ -224,6 +224,23 @@ light.position.set(1, 1, 100);
 scene.add(light)
 
 /**
+* Add Controls
+**/
+
+var controls = new THREE.TrackballControls(camera, renderer.domElement);
+
+/**
+* Handle window resizes
+**/
+
+window.addEventListener('resize', function() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  controls.handleResize();
+});
+
+/**
 * Render!
 **/
 
@@ -231,6 +248,7 @@ scene.add(light)
 function animate() {
 requestAnimationFrame( animate );
   renderer.render( scene, camera );
+  controls.update();
 }
 animate();
 
